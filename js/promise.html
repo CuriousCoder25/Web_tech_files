@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name: "",
+            address : "",
+            roll   	:12,
+            concat1: function(){
+                return  this.name + " " + this.address; 
+            }
+        };
+
+        student.name = "Shyam kumar";
+        student.address = "ktm";      
+        console.log(student.concat1());
+
+        student.name = "Hjon";
+        student.address = "USA";      
+        console.log(student.concat1());
+
+        
+    </script>
+</body>
+</html>

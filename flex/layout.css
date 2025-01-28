@@ -1,0 +1,41 @@
+*{
+    margin:2px;
+}
+body{
+    font-size: 24px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.flex-header{
+    background-color: #5070b5;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.flex-main{
+    display: flex;
+    flex:1;
+}
+.flex-nav{
+    background-color: rgb(197, 126, 45);
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-article{
+    background-color: rgb(83, 27, 156);
+    padding-top: 3rem;
+    flex: 3 3 5rem;
+}
+
+.flex-aside{
+    background-color: rgb(54, 128, 56);
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-footer{
+    background-color: #5070b5;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
