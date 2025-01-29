@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery Ajax</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">    </script>
+</head>
+<body>
+    <script>
+
+        function ajaxCall() {
+            $.ajax({ 
+                url:'https://fakestoreapi.com/products/1',
+                type: "GET",
+
+                success: function (data) {
+                    let x = JSON.stringify(data);
+                    console.log(x);
+                },
+
+                error: function (error) {
+                    console.log(`Error ${error}`);
+                }
+            });
+        }
+        ajaxCall();
+    </script>
+</body>
+</html>

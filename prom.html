@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        const urls = ['https://fakestoreapi.com/products/', 'https://fakestoreapi.com/products/categories'];
+        Promise.all(urls.map(url => fetch(url).then(r => r.json())))
+            .then(([products, categories]) => {
+                
+                    let text = "<table border='1'>"
+                    for (let x in categories) {
+                        text += "<tr><td>" + categories[x] + "</td></tr>";
+                    }
+                    text += "</table>"
+                    document.getElementById("demo").innerHTML = text;
+        })
+        .catch(error => console.log(error));
+    </script>
+</body>
+</html>

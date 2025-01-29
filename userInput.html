@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form action="" method="post">
+        <label>Number:</label>
+        <input type="text" name="number" id="number" /> <br>
+        <input type="button" name="click" value="save" onclick="mult();"/>
+    </form>
+    <script type="text/javascript">
+        function mult()
+        {
+            let num = document.getElementById('number').value;
+
+            for(var i = 1; i<=10; i++){
+                document.write(num+"*"+i+"="+num * i + "<br>");
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

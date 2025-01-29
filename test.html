@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Test</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="main">Show sidebar</div>
+        <div class="test">
+            <spans>kajsd lkajsd laskjd alksdj </spans>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi labore atque repudiandae natus maxime, quasi, esse est omnis cum temporibus aperiam saepe praesentium eum odit repellat tempora autem placeat. Dicta?</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sidebar").hide();
+            $(".main").click(function(){
+                $(".sidebar").toggle();
+            });
+
+
+            let tst = $(".test").html();
+            console.log(tst);
+            $(".test").html('kalsjdl kasjdlak sjdlaksd');
+        })
+    </script>
+</body>
+</html>

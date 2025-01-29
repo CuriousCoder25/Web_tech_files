@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="inp" id="inp">
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1" />
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1"/>
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1"/>
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1"/>
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1"/>
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1"/>
+        <br><input type="text" class="1" /> <input type="button" value="delete" class="delete_1"/>
+    </div>
+    <script type="text/javascript">
+        
+        var elem = document.getElementsByClassName("delete_1");
+        
+        for (var i = 0; i < elem.length; ++i) {
+            var item = elem[i];
+            item.addEventListener('click', function(e) {
+                e.target.previousSibling.remove();
+            });
+        }
+    </script>
+</body>
+</html>

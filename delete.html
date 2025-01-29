@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Image</td>
+            <td>Action</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td onmouseover="alert('i am here');">Dhangadhi</td>
+            <td>--</td>
+            <td>Edit | <a href="#delete" onclick="return confirm('Are you sure want to delete this record?');"> Delete</a></td>
+        </tr>
+        <tr>
+            <td>Shyam</td>
+            <td>kathmandu</td>
+            <td>--</td>
+            <td>Edit | Delete</td>
+        </tr>
+    </table>
+    <form>
+        <select id="provience" onchange="city(this.value);">
+            <option>Select one of them</option>
+            <option value="1">Koshi </option>
+            <option value="2">madhesh </option>
+            <option value="3">Bagmati </option>
+            <option value="4">Gandaki </option>
+            <option value="5">Lumbani </option>
+            <option value="6">Karnali </option>
+            <option value="7">Sudurpaschim </option>
+        </select>
+    </form>
+    <script type="text/javascript">
+        function city(provicence){
+            alert(provicence);
+        }
+    </script>
+</body>
+</html>
